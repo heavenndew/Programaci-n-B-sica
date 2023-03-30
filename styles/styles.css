@@ -1,0 +1,38 @@
+/* Estilos para el título */
+body {
+    background-image: url('https://png.pngtree.com/background/20211215/original/pngtree-beckoning-dancing-colorful-cartoon-monster-party-background-picture-image_1448308.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+
+    height: 100vh;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+  }
+
+h1 {
+    color: #AA77FF;
+    font-size: 36px;
+  }
+  
+  /* Estilos para los botones */
+  button {
+    background-color: #62CDFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para los radio buttons */
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  
