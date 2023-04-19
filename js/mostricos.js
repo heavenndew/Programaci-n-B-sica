@@ -1,8 +1,12 @@
-const botonMostrico = document.getElementById("boton_mostrico") 
-console.log(botonMostrico)
+function iniciarMostricos(){
+    const botonMostrico = document.getElementById("boton_mostrico") 
+    botonMostrico.addEventListener("click",manejarclick)
+}
 
 function manejarclick() {
     alert("Seleccionaste mostrico ")
 }
 
-botonMostrico.addEventListener("click",manejarclick)
+
+
+window.addEventListener('load', iniciarMostricos)
