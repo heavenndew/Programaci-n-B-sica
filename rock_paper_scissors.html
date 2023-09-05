@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RockPaperScissors</title>
+  </head>
+  <body>
+    <script>
+      let contador = 0;
+      let partidasGanadasJugador = 0
+      let  partidasGanasPc = 0
+
+      while (partidasGanadasJugador < 2 && partidasGanasPc < 2) {
+        let jugador = 0;
+
+       
+
+        //Aleatoriedad eleccion del PC, para hacerlo mas divertido
+        let min = 1;
+        let max = 3;
+        let pc = Math.floor(Math.random() * (max - min + 1) + min);
+
+        jugador = prompt("Elige 1 para 🪨, 2 para 📄 y 3 para ✂️");
+
+        const piedra = 1;
+        const papel = 2;
+        const tijera = 3;
+
+        // jugador ELEGIR
+        if (jugador == piedra) {
+          alert("Elegiste 🪨");
+        } else if (jugador == papel) {
+          alert("Elegiste 📄");
+        } else if (jugador == tijera) {
+          alert("Elegiste ✂️");
+        } else {
+          alert("Perdiste!");
+        }
+        // pc ELEGIR
+        if (pc == piedra) {
+          alert("pc elige 🪨");
+        } else if (pc == papel) {
+          alert("pc elige 📄");
+        } else if (pc == tijera) {
+          alert("pc elige ✂️");
+        }
+     
+
+        // COMBATE
+        if (jugador == pc) {
+          alert("Empate!");
+        } else if (jugador == piedra && pc == tijera) {
+          alert("Ganaste!");
+          partidasGanadasJugador ++
+        } else if (jugador == papel && pc == piedra) {
+          alert("Ganaste!");
+          partidasGanadasJugador ++
+        } else if (jugador == tijera && pc == papel) {
+          alert("Ganaste!");
+          partidasGanadasJugador ++
+        } else {
+          alert("Perdiste!");
+          partidasGanasPc ++ 
+        }
+
+        console.log(partidasGanadasJugador,partidasGanasPc )
+      }
+
+      alert(`Has ganado ${partidasGanadasJugador} partidas`);
+      alert(`Has perdido ${partidasGanasPc} partidas`);
+
+    </script>
+  </body>
+</html>
