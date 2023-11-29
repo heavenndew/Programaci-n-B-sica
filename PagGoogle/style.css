@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: visible;
+    /* todo lo que
+     sobresalga del contenedor va a estar oculto */
+    background-color: #202124;
+    font-family: Arial, Helvetica, sans-serif;
+    /* box-sizing: 62.5%; */
+    color: white;
+    margin: 0 30px 0 30px;
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #202124;
+    display: flex;
+    justify-content: right;
+    align-content: stretch;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 0.8rem ;
+}
+
+h1 {
+    font-size: 7rem;
+}
+
+button {
+    all: unset;
+    /* quita todas las propiedades por defecto. como el borde horroroso */
+    color: white;
+    border-color: #202124;
+    outline: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    
+    /* //falta el borde del cuadro */
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+}
+
+.text_search {
+    height: 3rem;
+    width: 36.5rem;
+    border: #dfe1e5 1px solid;
+    border-radius: 1.5rem;
+    background: #202124 ;
+}
+
+.busqueda {
+    margin: 5px;
+    background-color: #303134;
+    border-radius: 0.5rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_start {
+    display: flex;
+    justify-content: flex start;
+}
+
+.footer_end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer_col {
+    padding: 0.5rem;
+    
+}
