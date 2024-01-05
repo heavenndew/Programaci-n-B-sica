@@ -1,0 +1,62 @@
+* {
+    font-size: 2rem;
+    border: none;
+}
+
+body {
+    background-color: #EEF5FF;
+}
+
+.contenedor3 {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    gap: 10px;
+}
+
+.item1 {
+    background-image: url(./images/colibri_buffon_pn.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+.item2 {
+    background-image: url(./images/colibri_er_pn.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.item3 {
+    background-image: url(./images/espiguero_capuchino_pn.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.item4 {
+    background-image: url(./images/esmeralda_rabicorta_pn.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+.item5 {
+    background-image: url(./images/espiguero_ladrillo_pn.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+.item6 {
+    background-image: url(./images/espiguero_saltarin_pn.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+.item7 {
+    background-image: url(./images/gavilan_caminero_pn.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
